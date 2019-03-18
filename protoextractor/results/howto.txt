@@ -1,0 +1,3 @@
+protoc-c --c_out=./src sxe.proto
+
+protoc --cpp_out=./src sxe.proto

@@ -1,0 +1,33 @@
+#ifndef ENGINE_H
+#define ENGINE_H
+
+#include "engine/wrect.h"
+#include "engine/cl_dll.h"
+#include "engine/pmtrace.h"
+#include "engine/pm_defs.h"
+#include "engine/cdll_int.h"
+#include "engine/const.h"
+#include "engine/progdefs.h"
+#include "engine/eiface.h"
+#include "engine/edict.h"
+#include "engine/studio_event.h"
+#include "engine/entity_types.h"
+#include "engine/entity_state.h"
+#include "engine/r_efx.h"
+#include "engine/r_studioint.h"
+#include "engine/pmtrace.h"
+#include "engine/usercmd.h"
+#include "engine/studio.h"
+#include "engine/triangleapi.h"
+#include "engine/com_model.h"
+#include "engine/studiomodelrenderer.h"
+#include "engine/com_model.h"
+#include "engine/ref_params.h"
+#include "engine/event_api.h"
+#include "engine/screenfade.h"
+#include "engine/parsemsg.h"
+#include "engine/net_api.h"
+#include "engine/interface.h"
+#include "engine/keydefs.h"
+
+#endif

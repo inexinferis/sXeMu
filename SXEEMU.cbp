@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sXeMu" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler_345" />
+		<Option virtualFolders="Others\;" />
+		<Build>
+			<Target title="Release">
+				<Option output="../Release/SE/sXeMu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Release/SE" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_345" />
+				<Compiler>
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug">
+				<Option output="../Debug/SE/sXeMu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Debug/SE" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_345" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release (VMP)">
+				<Option output="../Release/SE/sXeMu" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Release/SE" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_345" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DVM_PROTECT" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../VMProtectSDK32.a" />
+				</Linker>
+			</Target>
+			<Target title="ProtDump">
+				<Option output="SXEEMU" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/Debug/SEPD" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_compiler_345" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-D_PROCDUMP" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="user32" />
+			<Add library="crypto" />
+			<Add library="gdi32" />
+			<Add library="version" />
+		</Linker>
+		<Unit filename="CRC32.cpp" />
+		<Unit filename="CRC32.h" />
+		<Unit filename="engine.h" />
+		<Unit filename="engine/Sequence.h" />
+		<Unit filename="engine/activity.h" />
+		<Unit filename="engine/anorms.h" />
+		<Unit filename="engine/archtypes.h" />
+		<Unit filename="engine/beamdef.h" />
+		<Unit filename="engine/camera.h" />
+		<Unit filename="engine/cdll_dll.h" />
+		<Unit filename="engine/cdll_int.h" />
+		<Unit filename="engine/cl_dll.h" />
+		<Unit filename="engine/cl_entity.h" />
+		<Unit filename="engine/com_model.h" />
+		<Unit filename="engine/con_nprint.h" />
+		<Unit filename="engine/const.h" />
+		<Unit filename="engine/crc.h" />
+		<Unit filename="engine/custom.h" />
+		<Unit filename="engine/customentity.h" />
+		<Unit filename="engine/cvardef.h" />
+		<Unit filename="engine/demo_api.h" />
+		<Unit filename="engine/director_cmds.h" />
+		<Unit filename="engine/dlight.h" />
+		<Unit filename="engine/dll_state.h" />
+		<Unit filename="engine/edict.h" />
+		<Unit filename="engine/eiface.h" />
+		<Unit filename="engine/engine_launcher_api.h" />
+		<Unit filename="engine/entity_state.h" />
+		<Unit filename="engine/entity_types.h" />
+		<Unit filename="engine/event_api.h" />
+		<Unit filename="engine/event_args.h" />
+		<Unit filename="engine/event_flags.h" />
+		<Unit filename="engine/exefuncs.h" />
+		<Unit filename="engine/hltv.h" />
+		<Unit filename="engine/in_buttons.h" />
+		<Unit filename="engine/interface.cpp" />
+		<Unit filename="engine/interface.h" />
+		<Unit filename="engine/ivoicetweak.h" />
+		<Unit filename="engine/keydefs.h" />
+		<Unit filename="engine/mathlib.h" />
+		<Unit filename="engine/net_api.h" />
+		<Unit filename="engine/netadr.h" />
+		<Unit filename="engine/nowin.h" />
+		<Unit filename="engine/parsemsg.cpp" />
+		<Unit filename="engine/parsemsg.h" />
+		<Unit filename="engine/particledef.h" />
+		<Unit filename="engine/pm_defs.h" />
+		<Unit filename="engine/pm_info.h" />
+		<Unit filename="engine/pm_materials.h" />
+		<Unit filename="engine/pmtrace.h" />
+		<Unit filename="engine/progdefs.h" />
+		<Unit filename="engine/progs.h" />
+		<Unit filename="engine/qfont.h" />
+		<Unit filename="engine/r_efx.h" />
+		<Unit filename="engine/r_studioint.h" />
+		<Unit filename="engine/ref_params.h" />
+		<Unit filename="engine/screenfade.h" />
+		<Unit filename="engine/shake.h" />
+		<Unit filename="engine/studio.h" />
+		<Unit filename="engine/studio_event.h" />
+		<Unit filename="engine/studiomodelrenderer.h" />
+		<Unit filename="engine/triangleapi.h" />
+		<Unit filename="engine/usercmd.h" />
+		<Unit filename="engine/util_vector.h" />
+		<Unit filename="engine/utils.cpp" />
+		<Unit filename="engine/utils.h" />
+		<Unit filename="engine/weaponinfo.h" />
+		<Unit filename="engine/wrect.h" />
+		<Unit filename="protbufsxe.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="Others/" />
+		</Unit>
+		<Unit filename="protbufsxe.h">
+			<Option virtualFolder="Others/" />
+		</Unit>
+		<Unit filename="protobuf-c/protobuf-c-data-buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="protobuf-c/protobuf-c-data-buffer.h" />
+		<Unit filename="protobuf-c/protobuf-c-private.h" />
+		<Unit filename="protobuf-c/protobuf-c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="protobuf-c/protobuf-c.h" />
+		<Unit filename="sxe13.1.pb-c.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sxe13.1.pb-c.h" />
+		<Unit filename="sxeemu.cpp">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
